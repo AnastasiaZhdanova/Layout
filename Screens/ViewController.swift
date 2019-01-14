@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import CoreGraphics
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var triangle: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let triangle = Triangle()
+        view.addSubview(triangle)
     }
 
 
 }
 
+
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+}
