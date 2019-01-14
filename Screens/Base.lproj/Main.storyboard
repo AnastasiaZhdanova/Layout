@@ -651,6 +651,11 @@ Cg
                                         <constraints>
                                             <constraint firstAttribute="height" constant="668" id="1pU-Vp-bPt"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79v-Ca-Jiu">
                                         <rect key="frame" x="35" y="65" width="50" height="50"/>
